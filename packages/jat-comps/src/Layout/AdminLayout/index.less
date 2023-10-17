@@ -1,0 +1,63 @@
+@headerHeight: 50px;
+@tabHeight: 30px;
+@siderWidth: 190px;
+@collpaseSiderWidth: 70px;
+
+.admin-layout {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color:  #F4F5F9;
+  .admin-layout-ctn {
+    display: flex;
+    flex-direction: column;
+  }
+  .layout-header {
+    width: 100%;
+    height: @headerHeight;
+    z-index: 97;
+    flex-shrink: 0;
+  }
+  .layout-tab {
+    width: 100%;
+    height: @tabHeight;
+    padding-left: @siderWidth;
+    z-index: 95;
+  }
+  .layout-tab.no-sider {
+    padding-left: 0;
+  }
+  .layout-tab.layout-tab-collpase {
+    padding-left: @collpaseSiderWidth;
+    &.layout-tab.no-sider {
+      padding-left: 0;
+    }
+  }
+  .layout-sider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: @siderWidth;
+    height: 100%;
+    padding-top: calc(@headerHeight);
+    z-index: 99;
+  }
+  .layout-sider.layout-sider-collpase {
+    width: @collpaseSiderWidth;
+  }
+  .layout-main {
+    height: calc(100% - @tabHeight - @headerHeight);
+    padding-left: @siderWidth;
+  }
+  .layout-main.no-tab {
+    height: calc(100% - @headerHeight);
+    padding-left: @siderWidth;
+  }
+  .layout-main.no-sider {
+    padding-left: 0;
+  }
+  .layout-main.layout-main-collpase {
+    padding-left: @collpaseSiderWidth;
+  }
+}

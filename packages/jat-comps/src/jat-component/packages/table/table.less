@@ -1,0 +1,218 @@
+@import url("../../commonCSS/varibles.less");
+@import url("../../commonCSS/variable-dark.less");
+@bgThead: #282f49;
+@theadSzie: #cccccc;
+
+.jat_table {
+  .el-table {
+    font-size: @fontSize;
+    color: @fontColor;
+
+    thead {
+      font-weight: normal;
+      color: @theadSzie;
+    }
+
+    th.el-table__cell > .cell {
+      height: 38px;
+      line-height: 38px;
+    }
+    // .caret-wrapper {
+    // }
+
+    .sort-caret {
+      &.ascending {
+        border-bottom-color: #a2a4ad;
+      }
+
+      &.descending {
+        border-top-color: #a2a4ad;
+      }
+    }
+
+    .ascending {
+      .sort-caret {
+        &.ascending {
+          border-bottom-color: #409eff;
+        }
+      }
+    }
+
+    .descending {
+      .sort-caret {
+        &.descending {
+          border-top-color: #409eff;
+        }
+      }
+    }
+  }
+
+  .el-table,
+  .el-table__expanded-cell {
+    background-color: @bgGrid;
+  }
+
+  .el-table--border::after,
+  .el-table--group::after,
+  .el-table::before {
+    background-color: transparent;
+  }
+
+  .el-table tr {
+    background-color: @bgGrid;
+  }
+
+  .el-table td,
+  .el-table th.is-leaf {
+    border-bottom: 1px solid @borderColor;
+  }
+
+  .el-table--small th {
+    padding: 0;
+  }
+
+  .el-table--small td {
+    padding: 12px 0;
+  }
+
+  .el-table .cell {
+    line-height: 18px;
+  }
+
+  .el-table .cell,
+  .el-table th div,
+  .el-table--border td:first-child .cell,
+  .el-table--border th:first-child .cell {
+    padding-left: 8px;
+  }
+
+  .el-table .cell,
+  .el-table th div {
+    padding-right: 8px;
+  }
+
+  // 斑马条 - 背景
+  .el-table--striped .el-table__body tr.el-table__row--striped td {
+    background: @striped;
+  }
+  // border table
+  .el-table--border,
+  .el-table--group {
+    border: 1px solid @borderColor;
+  }
+
+  .el-table--border td,
+  .el-table--border th,
+  .el-table__body-wrapper
+    .el-table--border.is-scrolling-left
+    ~ .el-table__fixed {
+    border-right: 1px solid @borderColor;
+  }
+  // 多选
+  .el-checkbox {
+    font-size: @fontSize;
+    font-weight: normal;
+    color: @fontColor;
+  }
+
+  // .el-checkbox__inner {
+  //   background-color: #4d5576;
+  //   border-color: rgb(77 85 118 / 80%);
+
+  //   &:hover {
+  //     border-color: @hover;
+  //   }
+  // }
+
+  // .el-checkbox__input.is-checked .el-checkbox__inner,
+  // .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  //   background-color: @active;
+  //   border-color: @active;
+  // }
+
+  // .el-checkbox__input.is-focus .el-checkbox__inner {
+  //   border-color: @active;
+  // }
+  // 固定列
+  .el-table__body tr.hover-row.current-row > td,
+  .el-table__body tr.hover-row.el-table__row--striped.current-row > td,
+  .el-table__body tr.hover-row.el-table__row--striped > td,
+  .el-table__body tr.hover-row > td {
+    font-weight: 500;
+    color: #167cf3;
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:hover > td {
+    font-weight: 500;
+    color: #167cf3;
+  }
+
+
+  .el-table__fixed-right::before,
+  .el-table__fixed::before {
+    background-color: transparent;
+  }
+
+  .el-table--border th.gutter:last-of-type {
+    border-color: @borderColor;
+  }
+
+  .el-table__fixed-right-patch {
+    background-color: @bgGrid;
+  }
+
+  .el-table--border th,
+  .el-table__fixed-right-patch {
+    border-color: @borderColor;
+  }
+
+  .el-table__body tr.hover-row.current-row > td.el-table__cell,
+  .el-table__body
+    tr.hover-row.el-table__row--striped.current-row
+    > td.el-table__cell,
+  .el-table__body tr.hover-row.el-table__row--striped > td.el-table__cell,
+  .el-table__body tr.hover-row > td.el-table__cell {
+    background: #ebf3ff;
+  }
+}
+// 深色主题
+html[theme-color="dark"] {
+  .jat_table {
+    .el-table {
+      color: @fontColorDark;
+      background-color: @bgGridDark;
+    }
+
+    .el-table tr {
+      background-color: @bgGridDark;
+    }
+
+    // 斑马条 - 背景
+    .el-table--striped .el-table__body tr.el-table__row--striped td {
+      background: @stripedDark;
+    }
+
+    .el-table td,
+    .el-table th.is-leaf {
+      border-bottom: 1px solid @borderColorDark;
+    }
+
+    .el-table__body tr.hover-row.current-row > td,
+    .el-table__body tr.hover-row.el-table__row--striped.current-row > td,
+    .el-table__body tr.hover-row.el-table__row--striped > td,
+    .el-table__body tr.hover-row > td {
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .el-table__body .current-row > td,
+    .el-table__body tr.hover-row.current-row > td.el-table__cell,
+    .el-table__body
+      tr.hover-row.el-table__row--striped.current-row
+      > td.el-table__cell,
+    .el-table__body tr.hover-row.el-table__row--striped > td.el-table__cell,
+    .el-table__body tr.hover-row > td.el-table__cell {
+      background: @stripedDark;
+    }
+  }
+}

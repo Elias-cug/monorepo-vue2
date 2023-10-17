@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="侧边栏icon-碰撞比对配置" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="侧边栏icon-数据资产管理-normal-备份-2" fill="currentColor" fill-opacity="0">
+            <rect id="Rectangle" x="0" y="0" width="16" height="16"></rect>
+        </g>
+        <g id="切换对比_switch-contrast" transform="translate(1.000000, 1.562985)" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9.1,1.44444444 L12.6,1.44444444 C13.25996,1.44444444 13.58994,1.44444444 13.79497,1.65598333 C14,1.86752222 14,2.20797778 14,2.88888889 L13.9922639,4.62136337" id="路径"></path>
+            <path d="M4.9,1.44444444 L1.4,1.44444444 C0.740033,1.44444444 0.4100495,1.44444444 0.2050265,1.65598333 C0,1.86752222 0,2.20797778 0,2.88888889 L0,10.1111111 C0,10.7920222 0,11.1324778 0.2050265,11.3440167 C0.4100495,11.5555556 0.740033,11.5555556 1.4,11.5555556 L5.76879583,11.5555556" id="路径"></path>
+            <line x1="7" y1="1.27527591e-14" x2="7" y2="3.78300751" id="路径"></line>
+        </g>
+        <g id="设置_setting-one" transform="translate(7.278229, 6.724448)" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <polygon id="路径" points="6.00006 7 8 3.5 6.00006 1.01183257e-14 2.00004 1.01183257e-14 0 3.5 2.00004 7"></polygon>
+            <path d="M4,4.55028503 C4.55228,4.55028503 5,4.10256503 5,3.55028503 C5,2.99800503 4.55228,2.55028503 4,2.55028503 C3.44772,2.55028503 3,2.99800503 3,3.55028503 C3,4.10256503 3.44772,4.55028503 4,4.55028503 Z" id="路径"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,53 @@
+<template>
+  <div>
+    <svg
+      width="19px"
+      height="19px"
+      viewBox="0 0 19 19"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <g
+        id="0802-分析模型管理"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <g
+          id="09模型参数管理弹窗备份"
+          transform="translate(-911.000000, -423.000000)"
+        >
+          <g id="编组-6" transform="translate(480.000000, 324.000000)">
+            <g id="6.icon/减" transform="translate(431.000000, 99.000000)">
+              <rect
+                id="Rectangle-10-Copy-5"
+                stroke="#666666"
+                stroke-width="1.2"
+                x="0.6"
+                y="0.6"
+                width="17.8"
+                height="17.8"
+                rx="2.4"
+              ></rect>
+              <path
+                d="M14.25,9.5 C14.25,9.82791907 13.9841691,10.09375 13.65625,10.09375 L5.34375,10.09375 C5.01583093,10.09375 4.75,9.82791907 4.75,9.5 C4.75,9.17208093 5.01583093,8.90625 5.34375,8.90625 L13.65625,8.90625 C13.9841691,8.90625 14.25,9.17208093 14.25,9.5 Z"
+                id="Combined-Shape"
+                fill="#666666"
+              ></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</template>
+<script>
+export default {
+  name: "Delete",
+  props: {
+    rotate: Number
+  }
+}
+</script>

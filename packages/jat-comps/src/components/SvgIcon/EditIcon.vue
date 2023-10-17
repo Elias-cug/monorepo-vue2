@@ -1,0 +1,42 @@
+<template>
+  <div>
+    <svg
+      width="15px"
+      height="14px"
+      viewBox="0 0 15 14"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <g
+        id="0802-分析模型管理"
+        stroke="none"
+        stroke-width="1"
+        fill="none"
+        fill-rule="evenodd"
+      >
+        <g
+          id="07模型分类管理-暂无子分类"
+          transform="translate(-1180.000000, -116.000000)"
+          stroke="currentColor"
+        >
+          <g id="btn-启用" transform="translate(1168.000000, 108.000000)">
+            <g id="icon-编辑" transform="translate(13.000000, 9.000000)">
+              <g
+                id="编辑"
+                transform="translate(3.334955, 0.000000)"
+                stroke-linecap="square"
+              >
+                <line x1="9" y1="0" x2="0" y2="9" id="直线"></line>
+              </g>
+              <polyline
+                id="路径"
+                points="12 4.62236072 12 12 0 12 0 0 7.68936663 0"
+              ></polyline>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </div>
+</template>

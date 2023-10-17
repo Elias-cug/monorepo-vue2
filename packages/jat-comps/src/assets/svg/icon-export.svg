@@ -1,0 +1,75 @@
+<svg
+  width="14px"
+  height="14px"
+  viewBox="0 0 14 14"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+>
+  <defs>
+    <rect id="path-1" x="0" y="0" width="14" height="14"></rect>
+  </defs>
+  <g
+    id="数据分析平台"
+    stroke="none"
+    stroke-width="1"
+    fill="none"
+    fill-rule="evenodd"
+  >
+    <g id="组件库" transform="translate(-597.000000, -151.000000)">
+      <g id="btn-导出-normal" transform="translate(597.000000, 151.000000)">
+        <mask id="mask-2" fill="white">
+          <use xlink:href="#path-1"></use>
+        </mask>
+        <g id="Mask"></g>
+        <rect
+          id="Rectangle"
+          fill="currentColor"
+          mask="url(#mask-2)"
+          x="0"
+          y="0"
+          width="11"
+          height="1"
+          rx="0.5"
+        ></rect>
+        <rect
+          id="Rectangle-Copy-2"
+          fill="currentColor"
+          mask="url(#mask-2)"
+          x="0"
+          y="13"
+          width="14"
+          height="1"
+          rx="0.5"
+        ></rect>
+        <rect
+          id="Rectangle"
+          fill="currentColor"
+          mask="url(#mask-2)"
+          x="0"
+          y="0"
+          width="1"
+          height="14"
+          rx="0.5"
+        ></rect>
+        <rect
+          id="Rectangle-Copy-4"
+          fill="currentColor"
+          mask="url(#mask-2)"
+          x="13"
+          y="10"
+          width="1"
+          height="4"
+          rx="0.5"
+        ></rect>
+        <path
+          d="M2,11 L3.05743583,8.88512834 C4.26119499,6.47761001 6.64807341,4.88590261 9.33333333,4.7 L9.33333333,4.7 L9.33333333,4.7 L9.33333333,2 L13,6.5 L9.33333333,11 L9.33333333,8.3 C7.18749277,8.10687435 5.04616606,8.71537545 3.32255512,10.0080837 L2,11 L2,11 Z"
+          id="Path-45"
+          stroke="currentColor"
+          stroke-linejoin="round"
+          mask="url(#mask-2)"
+        ></path>
+      </g>
+    </g>
+  </g>
+</svg>

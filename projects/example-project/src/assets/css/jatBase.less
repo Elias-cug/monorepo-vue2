@@ -1,0 +1,521 @@
+.Width-Twenty-Percent {
+  width: 20%;
+}
+
+.Width-Eighty-Percent {
+  width: 80%;
+}
+
+.Width-hundred-Percent {
+  width: 100%;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.borderbox {
+  box-sizing: border-box;
+}
+
+/* 滚动条通用 */
+::-webkit-scrollbar {
+  /* 滚动条整体样式 */
+  width: 8px; /* 高宽分别对应横竖滚动条的尺寸 */
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* 滚动条里面小方块 */
+  width: 8px;
+  margin: 0 auto;
+  background: #aecfff; /* #1773cd */
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track, /*滚动条里面轨道*/
+::-webkit-scrollbar-corner /*垂直水平滚动条交汇处*/ {
+  background: #ebeff4; /* #003e7a; */
+  border-radius: 8px;
+}
+
+// ------------------------------通用弹窗样式------start
+.CkDialog {
+  .el-dialog {
+    border-radius: 4px;
+
+    .el-dialog__header {
+      padding-top: 14px;
+      background-image: linear-gradient(180deg, #fff 4%, #e8e8f1 96%);
+
+      .el-dialog__title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0;
+        color: #333;
+      }
+
+      .el-dialog__headerbtn {
+        top: 11px;
+
+        .el-dialog__close {
+          width: 22px;
+          height: 22px;
+          font-weight: 700;
+          line-height: 22px;
+          color: #fff;
+          background: #bcc2d2;
+          border-radius: 22px;
+        }
+      }
+    }
+
+    .el-dialog__footer {
+      .el-button {
+        padding: 10px 20px;
+      }
+
+      .el-button--default {
+        border: 1px solid #167cf3;
+
+        > span {
+          // font-family: PingFangSC-Regular;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: 0;
+          color: #167cf3;
+        }
+      }
+
+      .el-button--primary {
+        background-image: linear-gradient(
+          180deg,
+          #4097ff 0%,
+          #2787ff 5%,
+          #2860f3 98%
+        );
+
+        > span {
+          // font-family: PingFangSC-Regular;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: 0;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+// ------------------------------通用弹窗样式------end
+.jat-select.cursorNormal .el-input.is-disabled .el-input__inner,
+.jat-select.cursorNormal .el-input.is-disabled .el-input__icon {
+  cursor: text;
+
+  .el-input.is-disabled .el-input__icon {
+    cursor: text;
+  }
+
+  &:hover {
+    border-color: rgba(46, 126, 255, 0.36);
+  }
+}
+
+.table__czBtn {
+  color: rgba(24, 144, 255, 0.847);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+// form表单样式
+.BasicInfo__FormWrapper__Content__FormItem {
+  margin-bottom: 14px;
+
+  &.notRequired {
+    .el-form-item__label {
+      &::before {
+        margin-right: 4px;
+        color: transparent;
+        content: "*";
+      }
+    }
+  }
+
+  .el-form-item__label {
+    line-height: 30px;
+  }
+
+  .el-form-item__content {
+    line-height: 30px;
+  }
+
+  .el-form-item__error {
+    padding-top: 2px;
+  }
+}
+
+// table 按钮
+
+// 新增按钮
+.addBtn--text {
+  color: #167cf3 !important;
+
+  .addBtn--text__icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: bottom;
+    background: url("@/assets/img/applyPage/LaunchApply/addBtn--text.png");
+  }
+}
+// 下载模板
+.downloadBtn--text {
+  color: #167cf3 !important;
+
+  .downloadBtn--text__icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: bottom;
+    background: url("@/assets/img/applyPage/LaunchApply/downloadBtn--text.png");
+  }
+}
+// 批量导入
+.importBtn--text {
+  color: #078f1d !important;
+
+  .importBtn--text__icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: bottom;
+    background: url("@/assets/img/applyPage/LaunchApply/importBtn--text.png");
+  }
+}
+// 删除
+.deleteBtn--text {
+  color: #f35516 !important;
+
+  .deleteBtn--text__icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: bottom;
+    background: url("@/assets/img/applyPage/LaunchApply/deleteBtn--text.png");
+  }
+}
+// 批量导入
+.uploadBtn--text {
+  color: #167cf3 !important;
+
+  .uploadBtn--text__icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: bottom;
+    background: url("@/assets/img/applyPage/LaunchApply/uploadBtn--text.png");
+  }
+}
+
+.TableTextBtn {
+  padding: 0;
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.marginRight6 {
+  margin-right: 6px;
+}
+
+// message-box通用样式
+.el-message-box__wrapper {
+  .el-message-box {
+    .el-message-box__header {
+      padding: 12px 18px;
+      background-image: linear-gradient(180deg, #fff 4%, #e8e8f1 96%);
+
+      .el-message-box__title {
+        // font-family: PingFangSC-Medium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        letter-spacing: 0;
+        color: #333;
+      }
+
+      .el-message-box__headerbtn {
+        top: 12px;
+
+        .el-message-box__close {
+          width: 20px;
+          height: 20px;
+          font-weight: 700;
+          line-height: 20px;
+          color: #fff;
+          background: #bcc2d2;
+          border-radius: 20px;
+        }
+      }
+    }
+
+    .el-message-box__content {
+      padding: 20px 15px;
+
+      .el-message-box__message {
+        // font-family: PingFangSC-Regular;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0;
+        color: #666;
+      }
+    }
+
+    .el-message-box__btns {
+      .el-button--default {
+        border: 1px solid #167cf3;
+
+        > span {
+          // font-family: PingFangSC-Regular;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: 0;
+          color: #167cf3;
+        }
+      }
+
+      .el-button--primary {
+        background-image: linear-gradient(
+          180deg,
+          #4097ff 0%,
+          #2787ff 5%,
+          #2860f3 98%
+        );
+
+        > span {
+          // font-family: PingFangSC-Regular;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 14px;
+          letter-spacing: 0;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.marginBottom14 {
+  margin-bottom: 14px;
+}
+
+/* stylelint-disable-next-line no-invalid-position-at-import-rule */
+@import url("@jat-comps/jat-component//commonCSS/varibles.less");
+//cascader级联选择器
+.jat-cascader {
+  &:hover {
+    .el-input__inner {
+      border-color: @hoverColor;
+    }
+
+    .el-input__suffix {
+      border-color: @hoverColor;
+    }
+  }
+
+  &:focus {
+    .el-input__inner {
+      border-color: @inputFocusColor;
+    }
+  }
+
+  .el-input {
+    display: flex;
+  }
+
+  .el-input__inner {
+    height: 30px;
+    padding: 0 12px;
+    padding-right: 30px;
+    font-size: @fontSize;
+    line-height: 30px;
+    color: @fontColor;
+    background-color: @bgInput;
+    border-color: @borderColor;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+
+    &::-webkit-input-placeholder {
+      color: @placeholder;
+    }
+
+    &:hover {
+      border-color: @hoverColor;
+    }
+
+    &:focus {
+      border-color: @inputFocusColor;
+    }
+  }
+
+  .el-input.is-focus .el-input__suffix {
+    border-color: @inputFocusColor;
+  }
+
+  .el-input--medium .el-input__inner {
+    height: 28px;
+    padding: 0 12px;
+    padding-right: 22px;
+    line-height: 28px;
+  }
+
+  .el-input--medium .el-input__icon {
+    width: 30px;
+    line-height: 28px;
+  }
+
+  .el-input--small .el-input__inner {
+    padding: 0 12px;
+    padding-right: 30px;
+  }
+
+  .el-input--small .el-input__icon {
+    width: 30px;
+    line-height: 30px;
+  }
+
+  .el-input--mini .el-input__inner {
+    padding: 0 10px;
+    padding-right: 30px;
+  }
+
+  .el-input--mini .el-input__icon {
+    width: 16px;
+    line-height: 30px;
+  }
+
+  .el-input__suffix {
+    right: 0;
+    width: 30px;
+    line-height: 30px;
+    border-left: 1px solid #d5d5d5;
+  }
+
+  .el-icon-arrow-up::before {
+    font-weight: bold;
+    color: @fontColor;
+  }
+  // 以下为多选时的，tags
+  .el-tag--mini {
+    height: 18px;
+    padding: 0 6px;
+    line-height: 16px;
+  }
+
+  .el-tag {
+    font-family: @fontFamily;
+    font-size: @fontSize;
+    border-radius: 10px;
+  }
+
+  .el-tag.el-tag--info {
+    color: @fontColor;
+    background-color: rgba(153, 170, 199,0.1);
+    border-color: rgba(216, 216, 216, 0.1);
+  }
+
+  .el-tag.el-tag--info .el-tag__close {
+    color: #222841;
+  }
+
+  .el-tag__close.el-icon-close {
+    right: -5px;
+    font-weight: 600;
+    color: #222841;
+    background-color: rgba(153, 170, 199, 0.8);
+
+    &:hover {
+      color: @fontColor;
+      background-color: @hoverColor;
+    }
+  }
+
+  .el-input .el-select__caret {
+    font-size: @fontSize;
+  }
+}
+
+.el-tooltip__popper {
+  max-width: 300px;
+}
+
+.blueTag {
+  color: #167cf3;
+  border-color: transparent;
+}
+
+.purpleTag {
+  color: #2a16f3;
+  border-color: transparent;
+}
+
+.orangeTag {
+  color: #f35516;
+  border-color: transparent;
+}
+
+.redTag {
+  color: #eb4236;
+  border-color: transparent;
+}
+
+.greenTag {
+  color: #078f1d;
+  border-color: transparent;
+}
+
+.no-selection {
+  thead {
+    .el-table-column--selection {
+      .cell {
+        display: none;
+      }
+    }
+  }
+}
+
+.viewer-backdrop,
+.viewer-navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div {
+  box-sizing: border-box;
+}

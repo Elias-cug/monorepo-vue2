@@ -1,0 +1,76 @@
+{
+  "name": "jat-base",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "lint": "turbo run lint",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "simple-git-hooks",
+    "start:apps": "turbo run start --parallel --filter='./apps/*'",
+    "start:nuxt-app": "turbo run start --filter nuxt-app",
+    "start:storybook": "turbo run start --filter storybook",
+    "start:vite-app": "turbo run start --filter vite-app",
+    "start": "turbo run start --parallel",
+    "test:watch": "vitest -w --dir",
+    "test": "pnpm test --filter vitest",
+    "typecheck": "turbo run typecheck"
+  },
+  "dependencies": {
+    "eslint": "^7.32.0",
+    "eslint-define-config": "^1.21.0",
+    "@unocss/reset": "^0.53.6",
+    "@unocss/webpack": "^0.53.6",
+    "unocss": "^0.53.6"
+  },
+  "devDependencies": {
+    "@types/prompts": "2.4.2",
+    "@types/semver": "7.3.13",
+    "conventional-changelog-cli": "2.2.2",
+    "eslint-config-jat": "link:packages/eslint-config-jat",
+    "execa": "6.1.0",
+    "lint-staged": "^13.1.0",
+    "picocolors": "1.0.0",
+    "prettier": "2.8.1",
+    "prompts": "2.4.2",
+    "semver": "7.3.8",
+    "simple-git-hooks": "2.8.1",
+    "tsx": "3.12.1",
+    "turbo": "1.6.3",
+    "typescript": "4.9.4"
+  },
+  "engines": {
+    "node": ">=16",
+    "pnpm": ">=7"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged",
+    "commit-msg": "pnpm exec tsx scripts/verifyCommit.ts $1"
+  },
+  "packageManager": "pnpm@7.18.2",
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@types/react"
+      ],
+      "allowedVersions": {
+        "vite": "3"
+      }
+    },
+    "packageExtensions": {
+      "vue-template-compiler": {
+        "peerDependencies": {
+          "vue": "^3.3.4"
+        }
+      }
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,vue}": [
+      "prettier --write",
+      "eslint"
+    ]
+  }
+}
