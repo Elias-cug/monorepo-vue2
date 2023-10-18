@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { loginApi } from "../../../api/auth"
+// import { loginApi } from "../../../api/auth"
 import { setToken } from "../../../utils/storage/index"
 export default {
   data() {
@@ -25,12 +25,14 @@ export default {
   },
   methods: {
     login() {
-      loginApi(this.username, this.password).then((res) => {
-        if (res?.data?.code === "200") {
-          setToken(res?.data?.msg)
-          this.$router.push({ path: "/" })
-        }
-      })
+      this.$router.push({ path: "/" })
+      setToken("token")
+      // loginApi(this.username, this.password).then((res) => {
+      //   if (res?.data?.code === "200") {
+      //     setToken(res?.data?.msg)
+      //     this.$router.push({ path: "/" })
+      //   }
+      // })
     }
   }
 }

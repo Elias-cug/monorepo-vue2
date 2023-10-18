@@ -8,6 +8,10 @@ import { getMenusApi, getUserInfoApi } from "@/api/auth"
 import { toLogin } from "@jat-comps/utils"
 import nProgress from "nprogress"
 import "nprogress/nprogress.css"
+import staticMenu from "~/mock/routes-all"
+
+const isProduction = process.env.NOE_ENV === "production"
+const isStaticRoute = process.env.VUE_APP_ROUTE_TYPE === "static"
 
 function handleToken(query) {
   if (query.val) {
@@ -70,7 +74,14 @@ router.beforeEach(async (to, from, next) => {
         const { data } = await getUserInfoApi(token)
         if (data) {
           store.commit("userStore/setUserInfo", data?.data)
-          const { data: routeData } = await getMenusApi(curApp)
+          let routeData = null
+          if (isProduction || !isStaticRoute) {
+            const res = await getMenusApi(curApp)
+            routeData = res?.data
+          } else {
+            console.log(staticMenu.data)
+            routeData = staticMenu
+          }
           if (routeData) {
             let result = JSON.parse(routeData?.data)
             let menus = JSON.parse(result.menu)
