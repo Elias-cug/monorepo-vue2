@@ -9,6 +9,7 @@ import { toLogin } from "@jat-comps/utils"
 import nProgress from "nprogress"
 import "nprogress/nprogress.css"
 import staticMenu from "~/mock/routes-all"
+import { userDetail } from "~/mock/user"
 
 const isProduction = process.env.NOE_ENV === "production"
 const isStaticRoute = process.env.VUE_APP_ROUTE_TYPE === "static"
@@ -71,7 +72,14 @@ router.beforeEach(async (to, from, next) => {
 
     if (!isInitMenus) {
       if (isLogin) {
-        const { data } = await getUserInfoApi(token)
+        let data = null
+        if (isProduction || !isStaticRoute) {
+          const res = await getUserInfoApi(token)
+          data = res?.data
+        } else {
+          console.log(staticMenu.data)
+          data = userDetail
+        }
         if (data) {
           store.commit("userStore/setUserInfo", data?.data)
           let routeData = null
