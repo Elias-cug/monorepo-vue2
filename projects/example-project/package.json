@@ -6,8 +6,7 @@
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "eslint --fix --ext .ts,.tsx,.vue src --quiet",
-    "prepare": "husky install"
+    "lint": "eslint --fix --ext .ts,.tsx,.vue src --quiet"
   },
   "dependencies": {
     "@antv/x6": "^2.13.1",
