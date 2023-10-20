@@ -16,7 +16,7 @@ let graphURL = "http://192.168.1.36:8014/jat-ksh-web/#/"
 // 系统信息
 let appInfo = {
   "jat-sjpzbd": {
-    name: "数据碰撞比对",
+    name: "组件展示",
     icon: "logo-sjpzbd"
   }
 }

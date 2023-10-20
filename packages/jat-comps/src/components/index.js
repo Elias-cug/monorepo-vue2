@@ -35,3 +35,6 @@ export { default as Empty } from "./Empty"
 
 // JatIcon --> svg
 export { default as JatIcon } from "./JatIcon/JatIcon.vue"
+
+// JatContainer 页面用此包围
+export { default as JatContainer } from "./JatContainer"

@@ -1,7 +1,8 @@
 const state = {
   appId: "",
   appInfo: {},
-  customHeader: null
+  customHeader: null,
+  theme: "default"
 }
 const getters = {
   appName: (state) => {
@@ -18,6 +19,9 @@ const getters = {
   },
   customHeader: (state) => {
     return state.customHeader
+  },
+  theme: (state) => {
+    return state.theme
   }
 }
 const mutations = {
@@ -35,6 +39,10 @@ const mutations = {
   },
   setCustomHeader: function (state, payload) {
     state.customHeader = payload
+  },
+  setTheme: function (state, payload) {
+    state.theme = payload
+    document.documentElement.setAttribute("theme-color", payload)
   }
 }
 const actions = {}

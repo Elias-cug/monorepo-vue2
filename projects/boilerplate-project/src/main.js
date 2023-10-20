@@ -17,6 +17,7 @@ import { setupDirective } from "@jat-comps/directive"
 import ElementUI from "element-ui"
 import "element-ui/lib/theme-chalk/index.css"
 import "@jat-comps/assets/css/jat-base.less"
+import "@jat-comps/styles/index.less"
 import Contextmenu from "vue-contextmenujs"
 import Header from "@/Layout/Header.vue"
 

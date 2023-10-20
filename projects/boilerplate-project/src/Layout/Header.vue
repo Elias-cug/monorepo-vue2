@@ -6,13 +6,12 @@
         <span class="HeaderComponent__Logo__Title">{{ appName }}</span>
       </div>
       <div class="HeaderComponent__UserCenter">
+        <span class="text-white cursor-pointer mr-12px" @click="changeTheme">
+          {{ theme }}
+        </span>
         <span class="HeaderComponent__UserCenter__IMG"></span>
         <span class="HeaderComponent__UserCenter__Name">{{ userName }}</span>
         <span class="HeaderComponent__UserCenter__Divider"></span>
-        <el-badge v-if="false" :max="99" :value="4" class="noticeNum">
-          <span class="HeaderComponent__UserCenter__Notice"></span>
-        </el-badge>
-        <span v-if="false" class="HeaderComponent__UserCenter__Settings"></span>
         <span
           @click="logout"
           class="HeaderComponent__UserCenter__Logout"
@@ -43,6 +42,7 @@ export default {
       appName: "appStore/appName",
       appInfo: "appStore/appInfo",
       appId: "appStore/appId",
+      theme: "appStore/theme",
       userName: "userStore/userName"
     })
   },
@@ -53,10 +53,15 @@ export default {
   },
   methods: {
     ...mapMutations({
-      SET_TASK_DETAIL: "task/SET_TASK_DETAIL"
+      SET_TASK_DETAIL: "task/SET_TASK_DETAIL",
+      setTheme: "appStore/setTheme"
     }),
     logout() {
       this.showConfirm = true
+    },
+    changeTheme() {
+      const curTheme = this.theme === "default" ? "black" : "default"
+      this.setTheme(curTheme)
     },
     async onConfirm() {
       const { error } = await logout()
